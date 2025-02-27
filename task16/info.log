@@ -1,0 +1,2 @@
+NAME              CLASS   HOSTS                ADDRESS   PORTS   AGE
+docker-flaskapp   nginx   o-toshev.sts404.uz             80      47s

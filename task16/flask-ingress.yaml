@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  name: docker-flaskapp
+  namespace: o-toshev
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: o-toshev.sts404.uz
+    http:
+      paths:
+      - backend:
+          service:
+            name: docker-flaskapp
+            port:
+              number: 80
+        path: /check-ingress
+        pathType: Exact
+status:
+  loadBalancer: {}
