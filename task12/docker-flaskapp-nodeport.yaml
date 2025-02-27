@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: docker-flaskapp
+  name: docker-flaskapp-nodeport
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: docker-flaskapp
+  type: NodePort
+status:
+  loadBalancer: {}

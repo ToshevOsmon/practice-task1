@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2025-02-26T19:14:32Z"
+  labels:
+    app: flask-app
+  name: flask-app
+  namespace: o-toshev
+  resourceVersion: "2726789"
+  uid: 0979df8c-3268-4a62-aba3-989351dbcfb3
+spec:
+  clusterIP: 10.233.24.156
+  clusterIPs:
+  - 10.233.24.156
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: flask-app
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
