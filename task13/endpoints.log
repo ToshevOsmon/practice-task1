@@ -1,0 +1,5 @@
+NAME                  ENDPOINTS                               AGE
+flask-app             10.233.64.135:5000,10.233.66.250:5000   16m
+flask-app-nodeport    10.233.64.135:5000,10.233.66.250:5000   14m
+todo-osmon            10.233.64.194:8000                      25h
+todo-osmon-nodeport   10.233.64.194:8000                      10h
